@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-primary text-base;
+    @apply font-body text-black bg-[#fafafa];
   }
 }
 @layer components {
@@ -12,11 +12,76 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .text-1-line {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
+  .button {
+    @apply bg-[#3b5be9] py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90;
   }
+  .section {
+    @apply w-full rounded-md p-5 text-2xl text-white font-semibold shadow-md bg-primary;
+  }
+  .page-outlet {
+    @apply w-full page-container py-10 flex flex-col gap-y-6 px-2;
+  }
+  .item-table-active {
+    @apply border-l-2 border-l-primary;
+  }
+  input[type="radio"]:checked + label {
+    background-color: #3b5be9;
+    color: white;
+  }
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #8b9ef2 !important;
+  }
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #3b5be9 !important;
+  }
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #3b5be9 !important;
+  }
+  .ML__container {
+    @apply outline-none text-2xl;
+  }
+}
+.Toastify__toast-container--top-right {
+  margin-top: 4rem;
+}
+.card:nth-child(odd) {
+  background: white;
+  border: 2px solid #5373f2;
+  color: #5373f2;
+  .card-border {
+    border-color: #5373f2;
+  }
+}
+.card:nth-child(even) {
+  border: 2px solid #5373f2;
+
+  --tw-scale-x: 1.2;
+  --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rocket {
+  position: relative;
+  animation-name: example;
+  animation-duration: 0.8s;
+  // animation-delay: -10s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 550px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.text-no-wrap-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }

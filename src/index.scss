@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-primary text-base;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-1-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+}

@@ -13,6 +13,8 @@ module.exports = {
         fa: "#fafafa",
         ef: "#efefef",
         e5: "#e5e5e5",
+        text1: "#4B5264",
+        border1: "F1F1F3",
       },
     },
   },

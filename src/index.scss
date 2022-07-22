@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+}
+
 @layer base {
   body {
     @apply font-body text-black bg-[#fafafa];
@@ -13,13 +22,21 @@
     margin-right: auto;
   }
   .button {
-    @apply bg-[#3b5be9] py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90;
+    @apply bg-[#3b5be9] py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90 text-center;
   }
   .section {
     @apply w-full rounded-md p-5 text-2xl text-white font-semibold shadow-md bg-primary;
   }
   .page-outlet {
     @apply w-full page-container py-10 flex flex-col gap-y-6 px-2;
+  }
+
+  .text-1-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
   .item-table-active {
     @apply border-l-2 border-l-primary;
@@ -67,6 +84,14 @@
   animation-duration: 0.8s;
   // animation-delay: -10s;
 }
+.google {
+  @apply w-full items-center justify-center rounded;
+  box-shadow: 0 0 0 0 white !important;
+  border-radius: 0.5rem !important;
+  border: 2px solid !important;
+  border-color: #f1f1f3 !important;
+  padding: 0.2rem 0 !important;
+}
 
 @keyframes example {
   0% {
@@ -78,10 +103,27 @@
     top: 0px;
   }
 }
-.text-no-wrap-1 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
+@media (max-width: 1440px) {
+  .page-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 639px) {
+  .page-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .home {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  .slogan {
+    font-size: 0.8rem;
+  }
 }

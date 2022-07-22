@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 // import imageRocket from "../assets/images/rocket1h.png";
 import imageHome from "../assets/images/home3.png";
 const HomePage = () => {
@@ -21,8 +21,8 @@ const HomePage = () => {
     <>
       <div className="w-full bg-gradient-to-b from-white to-[#fafafa]">
         <div className="w-full page-container bg-gradient-to-b from-white to-[#fafafa]">
-          <div className="w-full flex items-center pb-20 pt-16 justify-between gap-x-4 p-16 pt-10">
-            <div className=" w-[32%] flex flex-col gap-y-6 justify-between items-start">
+          <div className="w-full home flex lg:flex-row flex-col items-center pb-20 justify-between gap-4 p-4 md:px-16 md:pt-10">
+            <div className="w-full lg:w-[54%] xl:w-[32%] flex flex-col gap-y-6 justify-between items-start">
               <div className="flex items-center gap-x-2">
                 <svg
                   width="17"
@@ -44,24 +44,24 @@ const HomePage = () => {
                       y2="0.487576"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#D1498B" />
-                      <stop offset="0.355217" stop-color="#FE5A5B" />
-                      <stop offset="0.785075" stop-color="#3145FC" />
-                      <stop offset="1" stop-color="#BF34F0" />
+                      <stop stopColor="#D1498B" />
+                      <stop offset="0.355217" stopColor="#FE5A5B" />
+                      <stop offset="0.785075" stopColor="#3145FC" />
+                      <stop offset="1" stopColor="#BF34F0" />
                     </linearGradient>
                   </defs>
                 </svg>
-                <span class="font-extrabold text-transparent text-base bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                <span className="slogan font-extrabold text-transparent text-base bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                   Best Kids Academic Online Learning Platform
                 </span>
               </div>
-              <h1 className="text-6xl font-bold text-black">
+              <h1 className="title text-6xl font-bold text-black">
                 Inspiring Innovation And Discovery
               </h1>
               <span className=" text-gray-500 text-lg">
                 We have more than 80 skills for you to master
               </span>
-              <div className="flex items-center justify-between w-full gap-x-2">
+              <div className="flex email-contact items-center justify-between w-full sm:w-[80%] md:w-[50%] lg:w-full gap-x-2">
                 <input
                   type="text"
                   className="p-3 bg-fa border-2 border-e5 text-sm rounded-lg outline-none flex-1"
@@ -72,7 +72,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[60%] ">
+            <div className="w-full md:w-[80%] lg:w-[60%] ">
               <img src={imageHome} alt="" className="w-full object-cover" />
             </div>
           </div>

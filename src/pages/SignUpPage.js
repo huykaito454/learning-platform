@@ -9,14 +9,14 @@ import * as yup from "yup";
 import IconEyeToggle from "../components/Icons/IconEyeToggle";
 import useToggleValue from "../hooks/useToggleValue";
 const schema = yup.object({
-  fullName: yup.string().required("This field is required"),
+  fullName: yup.string().required("Please enter your full name"),
   email: yup
     .string()
-    .email("Please enter your email address")
-    .required("This field is required"),
+    .email("Please enter a valid email address")
+    .required("Please enter email address"),
   password: yup
     .string()
-    .required("This field is required")
+    .required("Please enter password")
     .min(8, "Password must be 8 character "),
 });
 const SignUpPage = () => {

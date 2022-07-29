@@ -6,9 +6,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
+import "react-circular-progressbar/dist/styles.css";
+import "react-calendar/dist/Calendar.css";
 const container = document.getElementById("root");
 const root = createRoot(container);
-
 root.render(
   <Provider store={store}>
     <BrowserRouter>

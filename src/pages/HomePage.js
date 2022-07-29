@@ -78,6 +78,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       {/* <div className="w-full page-container py-20 ">
         <div className="flex flex-col gap-y-6 items-center justify-center">
           <span className="text-4xl font-semibold mb-10 text-secondary flex items-center gap-x-2 justify-center ">

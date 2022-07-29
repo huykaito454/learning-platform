@@ -13,7 +13,7 @@ const Input = ({
       <input
         type="text"
         className={`outline-none py-3 px-6 rounded-lg border-2 border-border1 w-full ${className} ${
-          errors.length > 0 ? " border-red-400" : ""
+          errors.length > 0 ? " border-red-400 " : "focus:border-primary "
         }`}
         placeholder={errors.length <= 0 ? placeholder : ""}
         {...register}

@@ -23,7 +23,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive ? "text-primary cursor-pointer" : "cursor-pointer"
             }
-          >
+          > 
             Home
           </NavLink>
           <NavLink

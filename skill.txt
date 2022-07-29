@@ -1,0 +1,174 @@
+1 : Elementary Math
+    1 : Arithmetic
+    2 : Fractions
+    3 : Percentages
+    4 : Place Value
+    5 : Number Type Arithmetic
+    6 : Mathematical Word Problems
+
+2 : Algebra
+    1 : Equation Solving
+    2 : Polynomials
+    3 : Rational Functions
+    4 : Simplification
+    5 : Matrices
+    6 : Quaternions
+    7 : Finite Groups
+    8 : Finite Fields
+    9 : Domain & Range
+
+3 : Calculus & Analysis
+    1 : Integrals
+    2 : Derivatives
+    3 : Limits
+    4 : Sequences
+    5 : Sums
+    6 : Products
+    7 : Series Expansions
+    8 : Applications of Calculus
+    9 : Vector Analysis
+    10 : Integral Transforms
+    11 : Domain & Range
+    12 : Continuity
+
+4 : Geometry
+    1 : Plane Geometry
+    2 : Solid Geometry
+    3 : Coordinate Geometry
+    4 : Geometric Transformations
+    5 : Curves & Surfaces
+    6 : High-Dimensional Geometry
+    7 : Packing & Covering Problems
+    8 : Tilings
+    9 : Moiré Patterns
+    10 : Polyforms
+    11 : Topology
+5 : Differential Equations
+    1 : Ordinary Differential Equations
+    2 : Numerical Differential Equation Solving
+6 : Plotting & Graphics
+    1 : Functions
+    2 : 3D Plots
+    3 : Equations
+    4 : Inequalities
+    5 : Polar Plots
+    6 : Parametric Plots
+    7 : Number Lines
+7 : Numbers
+    1 : Integers
+    2 : Rational Numbers
+    3 : Irrational Numbers
+    4 : Algebraic Numbers
+    5 : Transcendental Numbers
+    6 : Complex Numbers
+    7 : Arbitrary Precision
+    8 : Mathematical Constants
+    9 : Number Recognition
+    10 : Base Conversions
+    11 : Historical Numbers
+    12 : Number Names
+    13 : Number Type Arithmetic
+8 : Trigonometry
+    1 : Trigonometric Calculations
+    2 : Trigonometric Functions
+    3 : Trigonometric Identities
+    4 : Trigonometric Equations
+    5 : Trigonometric Theorems
+    6 : Spherical Trigonometry
+9 : Linear Algebra
+    1 : Vectors
+    2 : Matrices
+    3 : Linear Independence
+    4 : Vector Spaces
+10 : Number Theory
+    1 : Prime Numbers
+    2 : Divisors
+    3 : Diophantine Equations
+    4 : Digit Sums
+    5 : Special Numbers
+    6 : Number Type Arithmetic
+    7 : Continued Fractions
+11 : Discrete Mathematics
+    1 : Combinatorics
+    2 : Graph Theory
+    3 : Point Lattices
+    4 : Sequences
+    5 : Recurrences
+    6 : Ackermann Function
+12 : Complex Analysis
+    1 : Complex Numbers
+    2 : Complex Functions
+    3 : Poles
+    4 : Residues
+    5 : Riemann Surfaces
+13 : Applied Mathematics
+    1 : Optimization
+    2 : Numerical Analysis
+    3 : Dynamical Systems
+    4 : Fractals
+    5 : Packing & Covering of Objects
+    6 : Game Theory
+14 : Logic & Set Theory
+    1 : Boolean Algebra
+    2 : Set Theory
+    3 : Transfinite Numbers
+15 : Mathematical Functions
+    1 : Domain & Range
+    2 : Injectivity & Surjectivity
+    3 : Continuity
+    4 : Periodic Functions
+    5 : Even & Odd Functions
+    6 : Special Functions
+    7 : Number Theoretic Functions
+    8 : Representation Formulas
+16 : Mathematical Definitions
+    1 : Mathematical Definitions
+    2 : Mathematical Subjects
+17 : Famous Math Problems
+    1 : Open Conjectures
+    2 : Solved Problems
+18 : Continued Fractions
+    1 : Numbers
+    2 : Functions
+    3 : Definitions of Terms
+    4 : Theorems
+    5 : Algorithms
+    6 : Literature
+19 : Statistics
+    1 : Descriptive Statistics
+    2 : Statistical Inference
+    3 : Regression Analysis
+    4 : Random Variables
+20 : Probability
+    1 : Games of Chance
+    2 : Bernoulli Trials
+    3 : Birthday Probabilities
+    4 : Probability Formulas
+    5 : Probability Distributions
+21 : Common Core Math
+    1 : Kindergarten
+    2 : Grade 1
+    3 : Grade 2
+    4 : Grade 3
+    5 : Grade 4
+    6 : Grade 5
+    7 : Grade 6
+    8 : Grade 7
+    9 : Grade 8
+    10 : High School
+    11 : Algebraic Thinking
+    12 : Counting & Cardinality
+    13 : Expressions & Equations
+    14 : Fractions
+    15 : Functions
+    16 : Geometry
+    17 : Measurement & Data
+    18 : Numbers in Base Ten
+    19 : Number System
+    20 : Ratios & Proportions
+    21 : Statistics & Probability
+    22 : High School Algebra
+    23 : High School Functions
+    24 : High School Geometry
+    25 : High School Number & Quantity
+    26 : High School Statistics & Probability

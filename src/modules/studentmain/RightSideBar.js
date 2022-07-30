@@ -26,11 +26,11 @@ const RightSideBar = () => {
       id="right-nav"
     >
       <div
-        className="absolute bg-right-nav-item-gradient p-4 rounded-tl-full rounded-bl-full w-10 h-20 flex items-center justify-start left-0 top-1/2 -translate-y-1/2 -translate-x-[99%] cursor-pointer"
+        className="absolute bg-right-nav-item-gradient p-3 rounded-tl-full rounded-bl-full w-7 h-14 flex items-center justify-start left-0 top-1/2 -translate-y-1/2 -translate-x-[99%] cursor-pointer"
         onClick={handleOpenRightBar}
       >
         <i
-          className="fas fa-angle-left text-3xl text-white"
+          className="fas fa-angle-left text-xl text-white"
           id="icon-right-nav"
         ></i>
       </div>

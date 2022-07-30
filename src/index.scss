@@ -44,7 +44,7 @@ input:-webkit-autofill:active {
     margin-right: auto;
   }
   .button {
-    @apply bg-primary py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-75 text-center;
+    @apply bg-primary py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90 text-center;
   }
   .section {
     @apply w-full rounded-md p-5 text-2xl text-white font-semibold shadow-md bg-primary;
@@ -72,6 +72,9 @@ input:-webkit-autofill:active {
   input[type="radio"]:checked + label {
     background-color: #3b5be9;
     color: white;
+  }
+  .answer-active {
+    @apply bg-primary-dark border-primary-dark text-white;
   }
   .CircularProgressbar .CircularProgressbar-trail {
     stroke: white !important;
@@ -214,6 +217,7 @@ abbr {
 .closes_right_nav {
   animation-name: close_nav;
   animation-duration: 0.5s;
+  // font-family: Arial, Helvetica, sans-serif;
 }
 .animation-duration {
   animation-duration: 0s !important;
@@ -231,6 +235,41 @@ abbr {
   animation-name: icon_nav;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes icon_nav {
   0% {

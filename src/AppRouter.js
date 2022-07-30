@@ -6,6 +6,7 @@ const MainLayout = lazy(() => import("./layout/MainLayout"));
 const HomePage = lazy(() => import("./pages/HomePage"));
 const SignUpPage = lazy(() => import("./pages/SignUpPage"));
 const SignInPage = lazy(() => import("./pages/SignInPage"));
+const StudentPage = lazy(() => import("./pages/StudentPage"));
 const QuestionPage = lazy(() => import("./pages/StudentPage/QuestionPage"));
 const TeacherMainLayout = lazy(() =>
   import("./layout/TeacherLayout/MainTeacherLayout")

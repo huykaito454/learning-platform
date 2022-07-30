@@ -6,7 +6,7 @@ const MainStudentLayout = () => {
   return (
     <>
       <LeftSideBar></LeftSideBar>
-      <div className="w-full page-student-container pl-[300px] p-5">
+      <div className="page-student-container pl-[320px] p-10">
         <Outlet></Outlet>
       </div>
       <RightSideBar></RightSideBar>

@@ -1,16 +1,16 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { Provider } from "react-redux";
-import { store } from "./store/configureStore";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import "./index.scss";
-import { BrowserRouter } from "react-router-dom";
-import "react-circular-progressbar/dist/styles.css";
-import "react-calendar/dist/Calendar.css";
-import "sweetalert2/src/sweetalert2.scss";
-import QuestionChoice from "./modules/studentmain/QuestionChoice";
-const container = document.getElementById("root");
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './store/configureStore';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import './index.scss';
+import { BrowserRouter } from 'react-router-dom';
+import 'react-circular-progressbar/dist/styles.css';
+import 'react-calendar/dist/Calendar.css';
+import 'sweetalert2/src/sweetalert2.scss';
+import StudentHomePage from './pages/StudentPage/StudentHomePage';
+const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(

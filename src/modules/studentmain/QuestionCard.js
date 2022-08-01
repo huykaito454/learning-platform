@@ -82,7 +82,7 @@ const QuestionCard = ({ item, index }) => {
           style={{
             outline: "none",
             fontSize: "18px",
-            width: "77%",
+            flex: "1 1 0%",
           }}
         >
           {item?.question?.plaintext}

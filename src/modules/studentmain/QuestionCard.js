@@ -6,10 +6,7 @@ import { useDispatch } from 'react-redux';
 import { setIsOpen } from '../../store/modal/modalSlice';
 import { setQuestion } from '../../store/question/questionSlice';
 import { useSelector } from 'react-redux';
-<<<<<<< HEAD
-=======
 import 'mathlive';
->>>>>>> 89ab5d820a231ab19e2158099b52802256cf2e5d
 const QuestionCard = ({ item, index }) => {
   const { questionList } = useSelector((state) => state.questionList);
   const dispatch = useDispatch();
@@ -46,15 +43,11 @@ const QuestionCard = ({ item, index }) => {
           if (answer == question?.result) {
             Swal.fire({
               title: 'Exactly!',
-<<<<<<< HEAD
-              text: `Correct answer : ${question?.result}`,
-=======
               html: `Correct answer : <math-field default-mode="math" readOnly="true" style="
               display: flex;
               justify-content: center;
               margin-top: 10px;
               ">${question?.result}</math-field>`,
->>>>>>> 89ab5d820a231ab19e2158099b52802256cf2e5d
               icon: 'success',
               showCancelButton: true,
               cancelButtonColor: '#d33',
@@ -69,15 +62,11 @@ const QuestionCard = ({ item, index }) => {
           } else {
             Swal.fire({
               title: 'Wrong!',
-<<<<<<< HEAD
-              text: `Correct answer : ${question?.result}`,
-=======
               html: `Correct answer : <math-field default-mode="math" readOnly="true" style="
               display: flex;
               justify-content: center;
               margin-top: 10px;
               ">${question?.result}</math-field>`,
->>>>>>> 89ab5d820a231ab19e2158099b52802256cf2e5d
               icon: 'error',
               showCancelButton: true,
               cancelButtonColor: '#d33',

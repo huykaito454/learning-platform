@@ -1,12 +1,14 @@
-import React from "react";
-import LeftSideBar from "../../modules/teachermain/LeftSideBar";
-import RightSideBar from "../../modules/teachermain/RightSideBar";
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import LeftSideBar from '../../modules/studentmain/LeftSideBar';
+import RightSideBar from '../../modules/studentmain/RightSideBar';
+import { Outlet } from 'react-router-dom';
 const MainTeacherLayout = () => {
   return (
     <>
       <LeftSideBar></LeftSideBar>
-      <Outlet></Outlet>
+      <div className='page-student-container pl-[320px] p-10'>
+        <Outlet></Outlet>
+      </div>
       <RightSideBar></RightSideBar>
     </>
   );

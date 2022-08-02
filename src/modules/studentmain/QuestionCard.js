@@ -28,6 +28,8 @@ const QuestionCard = ({ item, index }) => {
       if (typeof question?.result == 'boolean') {
         question.result = question?.result.toString();
       }
+      console.log(answer);
+      console.log(question?.result);
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -38,7 +40,7 @@ const QuestionCard = ({ item, index }) => {
         confirmButtonText: 'Submit',
       }).then((result) => {
         if (result.isConfirmed) {
-          if (answer === question?.result) {
+          if (answer == question?.result) {
             Swal.fire({
               title: 'Exactly!',
               html: `Correct answer : <math-field default-mode="math" readOnly="true" style="

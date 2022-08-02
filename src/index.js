@@ -9,7 +9,6 @@ import { BrowserRouter } from 'react-router-dom';
 import 'react-circular-progressbar/dist/styles.css';
 import 'react-calendar/dist/Calendar.css';
 import 'sweetalert2/src/sweetalert2.scss';
-import StudentHomePage from './pages/StudentPage/StudentHomePage';
 const container = document.getElementById('root');
 const root = createRoot(container);
 

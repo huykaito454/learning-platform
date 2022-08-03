@@ -7,299 +7,299 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+    -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 3px;
+    width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fafafa;
+    background: #fafafa;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 @layer base {
-  body {
-    @apply font-body text-black bg-[#fafafa];
-  }
+    body {
+        @apply font-body text-black bg-[#fafafa];
+    }
 }
 @layer components {
-  .page-container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .page-student-container {
-    max-width: 1720px;
-    margin-right: auto;
-  }
-  .button {
-    @apply bg-primary py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90 text-center;
-  }
-  .section {
-    @apply w-full rounded-md p-5 text-2xl text-white font-semibold shadow-md bg-primary;
-  }
-  .page-outlet {
-    @apply w-full page-container py-10 flex flex-col gap-y-6 px-2;
-  }
+    .page-container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page-student-container {
+        max-width: 1720px;
+        margin-right: auto;
+    }
+    .button {
+        @apply bg-primary py-2 px-5 rounded-lg border-2 text-white transition-all active:scale-90 cursor-pointer select-none hover:bg-opacity-90 text-center;
+    }
+    .section {
+        @apply w-full rounded-md p-5 text-2xl text-white font-semibold shadow-md bg-primary;
+    }
+    .page-outlet {
+        @apply w-full page-container py-10 flex flex-col gap-y-6 px-2;
+    }
 
-  .text-1-line {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-  .nav-item-active {
-    @apply border-primary text-primary;
-  }
-  .bg-right-nav-gradient {
-    background: linear-gradient(360deg, #0011a9 0.15%, #774000 100.88%);
-  }
-  .bg-right-nav-item-gradient {
-    background: linear-gradient(180deg, #503036 7.21%, #241f76 100%);
-  }
-  input[type="radio"]:checked + label {
-    background-color: #3b5be9;
-    color: white;
-  }
-  .answer-active {
-    @apply bg-primary-dark border-primary-dark text-white;
-  }
-  .CircularProgressbar .CircularProgressbar-trail {
-    stroke: white !important;
-  }
-  .CircularProgressbar .CircularProgressbar-path {
-    stroke: #ff9900 !important;
-  }
-  .CircularProgressbar .CircularProgressbar-text {
-    fill: #ff9900 !important;
-  }
-  .ML__container {
-    @apply outline-none text-2xl;
-  }
+    .text-1-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
+    .nav-item-active {
+        @apply border-primary text-primary;
+    }
+    .bg-right-nav-gradient {
+        background: linear-gradient(360deg, #0011a9 0.15%, #774000 100.88%);
+    }
+    .bg-right-nav-item-gradient {
+        background: linear-gradient(180deg, #503036 7.21%, #241f76 100%);
+    }
+    input[type="radio"]:checked + label {
+        background-color: #3b5be9;
+        color: white;
+    }
+    .answer-active {
+        @apply bg-primary-dark border-primary-dark text-white;
+    }
+    .CircularProgressbar .CircularProgressbar-trail {
+        stroke: white !important;
+    }
+    .CircularProgressbar .CircularProgressbar-path {
+        stroke: #ff9900 !important;
+    }
+    .CircularProgressbar .CircularProgressbar-text {
+        fill: #ff9900 !important;
+    }
+    .ML__container {
+        @apply outline-none text-2xl;
+    }
 }
 .Toastify__toast-container--top-right {
-  margin-top: 4rem;
+    margin-top: 4rem;
 }
 .card:nth-child(odd) {
-  background: white;
-  border: 2px solid #5373f2;
-  color: #5373f2;
-  .card-border {
-    border-color: #5373f2;
-  }
+    background: white;
+    border: 2px solid #5373f2;
+    color: #5373f2;
+    .card-border {
+        border-color: #5373f2;
+    }
 }
 .card:nth-child(even) {
-  border: 2px solid #5373f2;
+    border: 2px solid #5373f2;
 
-  --tw-scale-x: 1.2;
-  --tw-scale-y: 1.2;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 1.2;
+    --tw-scale-y: 1.2;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .google {
-  @apply w-full items-center justify-center rounded;
-  box-shadow: 0 0 0 0 white !important;
-  border-radius: 0.5rem !important;
-  border: 2px solid !important;
-  border-color: #f1f1f3 !important;
-  padding: 0.2rem 0 !important;
+    @apply w-full items-center justify-center rounded;
+    box-shadow: 0 0 0 0 white !important;
+    border-radius: 0.5rem !important;
+    border: 2px solid !important;
+    border-color: #f1f1f3 !important;
+    padding: 0.2rem 0 !important;
 }
 .react-calendar {
-  background-color: transparent !important;
-  border-color: transparent !important;
-  font-size: 12px !important;
-  &__navigation {
-    height: 35px !important;
-    color: #b3b3b3 !important;
-    &__label {
-      color: white !important;
-      background-color: #de9300 !important;
-      border-radius: 1rem !important;
-      font-size: 14px !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: 12px !important;
+    &__navigation {
+        height: 35px !important;
+        color: #b3b3b3 !important;
+        &__label {
+            color: white !important;
+            background-color: #de9300 !important;
+            border-radius: 1rem !important;
+            font-size: 14px !important;
+        }
     }
-  }
 }
 .react-calendar__month-view__weekdays {
-  color: #b3b3b3 !important;
+    color: #b3b3b3 !important;
 }
 .react-calendar__year-view {
-  color: #b3b3b3 !important;
+    color: #b3b3b3 !important;
 }
 .react-calendar__decade-view {
-  color: #b3b3b3 !important;
+    color: #b3b3b3 !important;
 }
 .react-calendar__viewContainer {
-  color: #b3b3b3 !important;
+    color: #b3b3b3 !important;
 }
 abbr {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 .react-calendar__year-view__months__month {
-  &:hover {
-    background-color: transparent !important;
-  }
+    &:hover {
+        background-color: transparent !important;
+    }
 }
 .react-calendar__decade-view__years__year {
-  &:hover {
-    background-color: transparent !important;
-  }
+    &:hover {
+        background-color: transparent !important;
+    }
 }
 .react-calendar__century-view__decades__decade {
-  &:hover {
-    background-color: transparent !important;
-  }
+    &:hover {
+        background-color: transparent !important;
+    }
 }
 .react-calendar__month-view__days__day {
-  color: #b3b3b3 !important;
-  &:hover {
-    background-color: transparent !important;
-  }
+    color: #b3b3b3 !important;
+    &:hover {
+        background-color: transparent !important;
+    }
 }
 
 .react-calendar__month-view__days__day--weekend {
-  color: #5190ff !important;
+    color: #5190ff !important;
 }
 .react-calendar__month-view__days__day--neighboringMonth {
-  color: #616161 !important;
+    color: #616161 !important;
 }
 .react-calendar__tile--now {
-  background: transparent !important;
+    background: transparent !important;
 }
 .react-calendar__tile--active {
-  background: #de9300 !important ;
-  color: white !important;
-  border-radius: 5px;
+    background: #de9300 !important ;
+    color: white !important;
+    border-radius: 5px;
 }
 .rocket {
-  position: relative;
-  animation-name: rocket;
-  animation-duration: 0.8s;
+    position: relative;
+    animation-name: rocket;
+    animation-duration: 0.8s;
 }
 
 @keyframes rocket {
-  0% {
-    left: 0px;
-    top: 550px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
+    0% {
+        left: 0px;
+        top: 550px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
 }
 .show_right_nav {
-  animation-name: show_nav;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+    animation-name: show_nav;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes show_nav {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 .closes_right_nav {
-  animation-name: close_nav;
-  animation-duration: 0.5s;
-  // font-family: Arial, Helvetica, sans-serif;
+    animation-name: close_nav;
+    animation-duration: 0.5s;
+    // font-family: Arial, Helvetica, sans-serif;
 }
 .animation-duration {
-  animation-duration: 0s !important;
+    animation-duration: 0s !important;
 }
 
 @keyframes close_nav {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 .icon-right-nav {
-  animation-name: icon_nav;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+    animation-name: icon_nav;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
 }
 .lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
+    animation-delay: -0.45s;
 }
 .lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
+    animation-delay: -0.3s;
 }
 .lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
+    animation-delay: -0.15s;
 }
 @keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 @keyframes icon_nav {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
 @media (max-width: 1440px) {
-  .page-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    .page-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 @media (max-width: 639px) {
-  .page-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    .page-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 @media (max-width: 480px) {
-  .home {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .title {
-    font-size: 2.4rem;
-  }
-  .slogan {
-    font-size: 0.8rem;
-  }
+    .home {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .title {
+        font-size: 2.4rem;
+    }
+    .slogan {
+        font-size: 0.8rem;
+    }
 }

@@ -1,6 +1,14 @@
 import React from 'react';
 import Button from '../../components/Button/Button';
 import ClassCard from '../../modules/teachermain/ClassCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+// import required modules
+import { Scrollbar, Mousewheel } from 'swiper';
 
 const TeacherClass = () => {
   return (
@@ -16,8 +24,8 @@ const TeacherClass = () => {
           Create Class
         </Button>
       </div>
-      {/* My class */}
 
+      {/* My class */}
       <div className='flex flex-row justify-between pt-5 items-center'>
         <span className='font-semibold text-2xl'>My class</span>
         {/* filter */}
@@ -30,8 +38,93 @@ const TeacherClass = () => {
           </select>
         </div>
       </div>
+      {/* swiper */}
+      <div className='rounded-lg mb-10'>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          mousewheel={true}
+          scrollbar={{
+            draggable: true,
+            hide: true,
+          }}
+          modules={[Scrollbar, Mousewheel]}
+          className='mySwiper h-[330px]'>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+        </Swiper>
+      </div>
 
-      <ClassCard />
+      {/* Recent access */}
+      <div className='flex flex-row justify-between items-center'>
+        <span className='font-semibold text-2xl'>Recently Access</span>
+      </div>
+      {/* Swiper */}
+      <div className='rounded-lg mb-10'>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          mousewheel={true}
+          scrollbar={{
+            draggable: true,
+            hide: true,
+          }}
+          modules={[Scrollbar, Mousewheel]}
+          className='mySwiper h-[330px]'>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ClassCard />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };

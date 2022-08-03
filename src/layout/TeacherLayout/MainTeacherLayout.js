@@ -1,6 +1,6 @@
 import React from 'react';
 import LeftSideBar from '../../modules/studentmain/LeftSideBar';
-import RightSideBar from '../../modules/studentmain/RightSideBar';
+// import RightSideBar from '../../modules/studentmain/RightSideBar';
 import { Outlet } from 'react-router-dom';
 const MainTeacherLayout = () => {
   return (
@@ -9,7 +9,7 @@ const MainTeacherLayout = () => {
       <div className='page-student-container pl-[320px] p-10'>
         <Outlet></Outlet>
       </div>
-      <RightSideBar></RightSideBar>
+      {/* <RightSideBar></RightSideBar> */}
     </>
   );
 };

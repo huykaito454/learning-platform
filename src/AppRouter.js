@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Standard from './pages/Standard';
 import TeacherClass from './pages/TeacherPage/TeacherClass';
+import TeacherClassDetails from './pages/TeacherPage/TeacherClassDetails';
 const MainLayout = lazy(() => import('./layout/MainLayout'));
 const HomePage = lazy(() => import('./pages/HomePage'));
 const SignUpPage = lazy(() => import('./pages/SignUpPage'));
@@ -43,6 +44,9 @@ export default function AppRouter() {
         <Route
           path='/teacher/class'
           element={<TeacherClass></TeacherClass>}></Route>
+        <Route
+          path='/teacher/classDetails'
+          element={<TeacherClassDetails />}></Route>
       </Route>
       {/* ----- Student -------- */}
       <Route

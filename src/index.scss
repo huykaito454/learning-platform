@@ -332,4 +332,20 @@ abbr {
     rgba(203, 156, 211, 0) 108.35%
   );
 }
+
+.teacherHome__mail {
+  background-image: linear-gradient(
+    358.89deg,
+    rgba(140, 200, 153, 0.56) 0.51%,
+    #d9a900 94.27%
+  );
+}
+
+.teacherHome__lesson {
+  background-image: linear-gradient(358.89deg, #ff9c86 0.51%, #8e59ff 94.27%);
+}
+
+.teacherHome__welcome {
+  background-image: url('./assets/images/teachers/stars.png');
+}
 // linear-gradient(0deg, rgba(246, 246, 246, 1) 0%, rgba(0,212,255,1)100%);

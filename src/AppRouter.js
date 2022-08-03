@@ -10,6 +10,7 @@ const SignUpPage = lazy(() => import('./pages/SignUpPage'));
 const SignInPage = lazy(() => import('./pages/SignInPage'));
 const StudentPage = lazy(() => import('./pages/StudentPage'));
 const QuestionPage = lazy(() => import('./pages/StudentPage/QuestionPage'));
+const TeacherHome = lazy(() => import('./pages/TeacherPage/TeacherHome'));
 const TeacherMainLayout = lazy(() =>
   import('./layout/TeacherLayout/MainTeacherLayout')
 );
@@ -41,6 +42,7 @@ export default function AppRouter() {
             <Navigate to='/' />
           )
         }>
+        <Route path='/teacher' element={<TeacherHome />}></Route>
         <Route
           path='/teacher/class'
           element={<TeacherClass></TeacherClass>}></Route>

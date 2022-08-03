@@ -49,7 +49,7 @@ const TeacherClass = () => {
             hide: true,
           }}
           modules={[Scrollbar, Mousewheel]}
-          className='mySwiper h-[330px]'>
+          className='mySwiper h-[330px] px-3'>
           <SwiperSlide>
             <ClassCard />
           </SwiperSlide>
@@ -95,7 +95,7 @@ const TeacherClass = () => {
             hide: true,
           }}
           modules={[Scrollbar, Mousewheel]}
-          className='mySwiper h-[330px]'>
+          className='mySwiper h-[330px] px-3'>
           <SwiperSlide>
             <ClassCard />
           </SwiperSlide>

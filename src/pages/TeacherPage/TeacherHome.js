@@ -74,10 +74,23 @@ const TeacherHome = () => {
             Working too late may effect your health!
           </span>
         </div>
-        {/* calender */}
-        <div className='w-[400px] h-[500px] bg-white shadow-xl rounded-xl'>
+        {/* calender & lessons */}
+        <div className='w-[400px] h-[500px] bg-white shadow-xl rounded-xl flex flex-col gap-4'>
           <div className='flex flex-col justify-center items-center'>
             <Calendar onChange={onChange} value={value} className='mt-5' />
+          </div>
+          {/* lessons */}
+          <div className='text-2xl font-bold flex flex-row justify-between items-center text-[#4B6471] mx-10'>
+            <span>Lesson</span>
+            <a className='text-base font-normal cursor-pointer'>View all</a>
+          </div>
+          <div className='flex flex-col border-l-[7px] border-primary rounded-md mx-10 p-2'>
+            <span>Grade 4 basic math</span>
+            <span className='text-gray-400'>Mon 7AM - 1AM</span>
+          </div>
+          <div className='flex flex-col border-l-[7px] border-primary rounded-md mx-10 p-2'>
+            <span>Grade 4 basic math</span>
+            <span className='text-gray-400'>Mon 7AM - 1AM</span>
           </div>
         </div>
       </div>

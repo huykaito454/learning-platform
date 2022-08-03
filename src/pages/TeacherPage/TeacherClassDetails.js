@@ -1,9 +1,11 @@
 import React from 'react';
 import Button from '../../components/Button/Button';
 import DetailsCard from '../../modules/teachermain/DetailsCard';
+import { useNavigate } from 'react-router-dom';
 
 const TeacherClassDetails = () => {
   let noti = 3;
+  let navigate = useNavigate();
   return (
     <div className='flex flex-col gap-7'>
       {/* top */}
@@ -11,8 +13,10 @@ const TeacherClassDetails = () => {
         <div className='flex gap-2 items-center'>
           <i class='fas fa-caret-left text-xl font-bold'></i>
           <a
-            href='/teacher/class'
-            className='underline underline-offset-4 font-semibold cursor-pointer'>
+            className='underline underline-offset-4 font-semibold cursor-pointer'
+            onClick={() => {
+              navigate('../class');
+            }}>
             All Classes
           </a>
         </div>
